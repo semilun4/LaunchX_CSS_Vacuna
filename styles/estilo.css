@@ -1,0 +1,10 @@
+h1{
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(26, 26, 85);
+}
+
+.header{
+    background-color:darkgrey;
+    padding: auto;
+    padding-right: 50%;
+}
