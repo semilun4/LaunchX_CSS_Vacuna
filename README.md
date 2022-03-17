@@ -1,5 +1,5 @@
 # LaunchX_CSS_Vacuna
- Práctica de CSS de LaunchX, consiste en clonar la siguiente (página de vacunación)[https://github.com/LaunchX-InnovaccionVirtual/FrontEnd-Mision/blob/main/03%20-%20CSS/practica/landingVacunaci%C3%B3n.png].
+ Práctica de CSS de LaunchX, consiste en clonar la siguiente [página de vacunación](https://github.com/LaunchX-InnovaccionVirtual/FrontEnd-Mision/blob/main/03%20-%20CSS/practica/landingVacunaci%C3%B3n.png).
  
 ## Descripción de la práctica
 La práctica consiste en lo siguiente:
