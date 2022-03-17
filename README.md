@@ -12,3 +12,6 @@ Bonus:
 
 - Bonus de diseños o páginas adicionales (Totalmente a tu creatividad)
 - Bonus de despliegue de la página
+
+## Contenido
+- [Mercadotecnia de la página de vacunación](https://github.com/semilun4/LaunchX_CSS_Vacuna/blob/main/Campaa_de_vacunacin.pdf)
