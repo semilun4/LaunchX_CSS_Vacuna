@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    padding: 0;
+    background-color: rgba(165, 197, 247, 0.411);
+    color: #1F3E72;
+}
+
+/* Barra de navegacion */
+
+header {
+    background-color: rgb(255, 255, 255, 0.80);
+    height: 13vh;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.menu-item{
+    display: inline;
+    padding-right: 1em;
+    position: relative;
+    left: 85%;
+    font-size: large;
+    font-weight: 600;    
+}
+
+#logo {
+    position: relative;
+    left: 0%;
+    font-size: x-large;
+    font-weight: bold;
+    color: #2C4CCA;
+}
+
+.barra-nav a{
+    text-decoration:none;
+    align-items: center;
+    transition: all ease-in-out .2s;
+    color: #8b8887;
+}
+
+.barra-nav li a:hover{
+    color: #1F3E72;
+}
+
+button{
+    background-color: #2C4CCA;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    border: 0px;
+    border-radius: 4px;
+}
+
+.button-nav {
+    padding: 15px 8px;
+    font-size: medium;
+}
+
+.button-nav:hover{
+    background-color: #1F3E72;
+    cursor: pointer;
+}
+
+
+/* Main */
+/* Primer seccion */
+.section1{
+    /* background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+    width: 100%; */
+    position: relative;
+    top: 180px;
+    left: 90px;
+}
+
+h1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.text {
+    color: #8b8887;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.schedule{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255,0.9);
+    top: 320px;
+    width: 750px;
+    height: 75px;
+    border-radius: 4px;
+    border: rgba(128, 128, 128, 0.349) 1px solid;
+    box-shadow: 3px 3px 8px rgb(191, 197, 212);
+}
+
+#adv{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.material-icons {
+    background: #e9f1fe;
+    color: #3353d1;
+}
+
+.yellow {
+    background: #fffdf5;
+    color: #ffd012;
+}
+
+.part1-icon1 {
+    text-align: center;
+    display: flex;
+}

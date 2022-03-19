@@ -8,18 +8,90 @@
     <!-- Letra de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Nunito+Sans:wght@900&display=swap" rel="stylesheet">
+
+
+    <!-- Iconos de Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Conectar al estilos.css -->
-    <link rel="stylesheet" href="./styles/estilo.css">
-    <title>Vacunación</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Vacunación en minutos</title>
 </head>
 <body>
     <header class="header">
-        <h1>Combatamos el virus con vacunas</h1>
-        <p>Terminemos esta pandemia matando el virus con una vacuna. <br>
-            Te cuidas tú, nos  cuidamos todos.</p>
+        <div class="barra-nav">
+            <ul class="menu">
+                <li class="menu-item" id="logo">Mi vacuna</li>
+                <li class="menu-item"><a href="#">Bases de datos</a></li>
+                <li class="menu-item"><a href="#">Educación</a></li>
+                <li class="menu-item"><a href=#>Noticias</a></li>
+                <li class="menu-item"><a href="#">Regulaciones</a></li>
+                <li class="menu-item"><button type="button" class="button-nav">Noticias falsas</button></li>
+            </ul>
+        </div>
     </header>
+    <main>
+        <section class="section1">
+
+            <div class="part1">
+                <h1 class="message">Las vacunas <br> nos acercan</h1>
+                <br>
+                <p class="text">Combatamos la pandemia con nuestra <br> mejor arma: la vacuna. <br>
+                Te cuidas tú, nos  cuidamos todos.
+                </p>
+            </div>
+            <div class="part1-icon1" id="adv">
+                <div><span class="material-icons yellow" id="shield">health_and_safety</span>Mayor protección</div>
+                <div><span class="material-icons yellow" id="star">verified</span>Vacunas aprobadas</div>
+            </div>
+            <div class="part1-icon2">
+                <span class="material-icons part1">schedule</span>Agende su vacunación
+                <h4></h4>
+            </div>
+
+            <div class="schedule">
+
+                <div class="location">
+                    <i class="material-icons part1">place</i>
+                    <label for="location" class="input-value">Ubicación</label>
+                    <select name="location" class="input-location" id="location">
+                        <option value="Tangananica">Tangananica</option>
+                        <option value="Tanganana">Tanganana</option>
+                        <option value="Titirilahue">Titirilahue</option>
+                        <option value="Titirilquen">Titirilquén</option>
+                    </select>
+                </div>
+
+                <div class="date">
+                    <i class="material-icons part1">event</i>
+                    <label for="date">Fecha</label>
+                    <input type="date" class="input-date" name="date" id="date" value="2022-04-18">
+                </div>
+
+
+                <div class="type-vaccine">
+                    <i class="material-icons part1">vaccines</i>
+                    <label for="type-vaccine" class="input-value">Tipo de vacuna</label>
+                    <select name="type-vaccine" class="input-vaccine" id="type-vaccine">
+                        <option value="AstraZeneca">AstraZeneca</option>
+                        <option value="Sinovac">SinoVAC</option>
+                        <option value="Pfizer">Pfizer</option>
+                        <option value="Moderna">Moderna</option>
+                    </select>
+                </div>
+
+                <button type="button" class="button-schedule">Subir</button>
+            </div>
+            <!-- 
+            <div class="part2" id="secc1-right">
+                <img src="img/gato1.jpg" alt="gato doctor" class="doc-cat" id="doc-cat">
+            </div> -->
+
+        </section>
+        
+        
+    </main>
     
 </body>
 </html>

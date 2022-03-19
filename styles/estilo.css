@@ -1,10 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgba(165, 197, 247, 0.411);
+    color: rgb(7, 7, 102);
+}
+
 h1{
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 8vh;
     color: rgb(26, 26, 85);
 }
 
-.header{
-    background-color:darkgrey;
-    padding: auto;
-    padding-right: 50%;
+p{
+    font-family: 'League Spartan', sans-serif;
 }
+
+.test{
+    width: 50%;
+    background-color: rgb(194, 166, 218);
+}
+
+.header{
+    background-color: rgb(255, 255, 255,0.8);
+    font-family: 'League Spartan', sans-serif;
+}
+
+ul.menu li{
+    display: inline;
+    padding-right: 1em;
+
+}
+
+
