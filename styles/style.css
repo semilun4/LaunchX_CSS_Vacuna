@@ -6,16 +6,16 @@
 body {
     font-family: 'League Spartan', sans-serif;
     padding: 0;
-    background-color: rgba(165, 197, 247, 0.411);
     color: #1F3E72;
+    /* background-color: lightblue; */
 }
 
 /* Barra de navegacion */
 
 header {
-    background-color: rgb(255, 255, 255, 0.80);
+    background-color: rgba(255, 255, 255, 0.9);
     height: 13vh;
-    position: fixed;
+    position: absolute;
     width: 100%;
     align-items: center;
     display: flex;
@@ -58,14 +58,12 @@ button{
     font-weight: 600;
     border: 0px;
     border-radius: 4px;
-}
-
-.button-nav {
     padding: 15px 8px;
     font-size: medium;
 }
 
-.button-nav:hover{
+
+.button-nav:hover, .button-schedule:hover{
     background-color: #1F3E72;
     cursor: pointer;
 }
@@ -73,16 +71,30 @@ button{
 
 /* Main */
 /* Primer seccion */
+main{
+    height: 1200px;
+    width: 100%;
+    /* background-color: lightblue;  */
+}
+
 .section1{
-    /* background-position: right top;
+    display: flex;
+    height: 624px;
+    background-image: url(../img/calcetin.png);
+    /* background-color: lightblue; */
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 800px;
-    width: 100%; */
-    position: relative;
-    top: 180px;
+    background-position: top right;
+    background-size: 50% 100%;
+    width: 100%;
+}
+
+.part1-text{
+    height: 30vh;
+    position:absolute;
+    top: 150px;
     left: 90px;
 }
+
 
 h1{
     font-family: 'Nunito Sans', sans-serif;
@@ -96,35 +108,132 @@ h1{
     line-height: 20px;
 }
 
-.schedule{
+.material-icons {
+    background: #3353d11c;
+    color: #3353d1;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.green {
+    background: #34805f17;
+    color: #34805f;
+}
+
+.part1-icon {
     position: absolute;
+    font-weight: 600;
+    font-size: small;
+    display: flex;
+    top: 55%;
+    left: 90px;
+}
+
+.text-icon-shield {
+    position: absolute;
+    left: 170px;
+    top: 2px;
+}
+
+.text-icon-star {
+    position: absolute;
+    left: 30px;
+    top: 2px;
+}
+
+#star {
+    margin-left: 110px;
+}
+
+.part2-icon {
+    height: 30px;
+    padding-top: 5px;
+    display: flex;
+    position: absolute;
+    font-weight: 600;
+    font-size: x-large;
+    top: 75%;
+    left: 90px;
+}
+
+.schedule{
+    position:relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-around;
+    top: 510px;
+    left: 90px;
     background-color: rgb(255, 255, 255,0.9);
-    top: 320px;
-    width: 750px;
-    height: 75px;
+    width: 800px;
+    height: 90px;
     border-radius: 4px;
     border: rgba(128, 128, 128, 0.349) 1px solid;
     box-shadow: 3px 3px 8px rgb(191, 197, 212);
+    z-index: 0;
+    padding: 10px;
 }
 
-#adv{
-    display: flex;
+
+/* .div-input {
+    position: absolute;
     flex-wrap: wrap;
+    display: -ms-inline-grid;
+    justify-content: center;
+    background-color: #fff;
+    top: 85%;
+    left: 3%;
+    width: 95%;
+    height: auto;
+    border-radius: 5px;
+    border: rgba(128, 128, 128, 0.349) 1px solid;
+    box-shadow: 3px 3px 8px rgb(191, 197, 212);
+    z-index: 0;
+    padding: 10px;
+    opacity: 0.9;
+} */
+
+
+select, .input-date {
+    padding-left: 30px;
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255,0.9)
 }
 
-.material-icons {
-    background: #e9f1fe;
-    color: #3353d1;
+/* quitar icono de calendario */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    }
+
+.button-schedule {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+    top: 10px;
 }
 
-.yellow {
-    background: #fffdf5;
-    color: #ffd012;
-}
 
-.part1-icon1 {
-    text-align: center;
+/* Seccion 2 */
+/* Logos de vacunas */
+
+.sec2-logos-vaccine {
+    position: absolute;
     display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.logos-vaccine {
+    position: relative;
+    margin-right: 20px;    
+    margin-left: 20px;
+    width: 200px;
+    -webkit-filter: grayscale(1); /* Webkit */
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* W3C */
+    opacity: 25%;
+    left: 90px;
 }

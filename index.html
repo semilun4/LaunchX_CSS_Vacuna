@@ -16,6 +16,9 @@
 
     <!-- Conectar al estilos.css -->
     <link rel="stylesheet" href="./styles/style.css">
+
+
+    
     <title>Vacunación en minutos</title>
 </head>
 <body>
@@ -34,27 +37,33 @@
     <main>
         <section class="section1">
 
-            <div class="part1">
+            <div class="part1-text" id="part1-text">
                 <h1 class="message">Las vacunas <br> nos acercan</h1>
                 <br>
                 <p class="text">Combatamos la pandemia con nuestra <br> mejor arma: la vacuna. <br>
                 Te cuidas tú, nos  cuidamos todos.
                 </p>
             </div>
-            <div class="part1-icon1" id="adv">
-                <div><span class="material-icons yellow" id="shield">health_and_safety</span>Mayor protección</div>
-                <div><span class="material-icons yellow" id="star">verified</span>Vacunas aprobadas</div>
+            
+            <div class="part1-icon" id="icon1">
+                <div>
+                    <span class="material-icons green" id="shield">health_and_safety</span>
+                    <p class="text-icon-shield">Mayor protección</p>
+                </div>
+                <div>
+                    <span class="material-icons green" id="star">star</span>
+                    <p class="text-icon-star">Vacunas <br> aprobadas</p>
+                </div>
             </div>
-            <div class="part1-icon2">
-                <span class="material-icons part1">schedule</span>Agende su vacunación
-                <h4></h4>
+            <div class="part2-icon" id="icon2">
+                <span class="material-icons blue">schedule</span>Agende su vacunación
             </div>
 
             <div class="schedule">
 
-                <div class="location">
+                <div class="location text">
                     <i class="material-icons part1">place</i>
-                    <label for="location" class="input-value">Ubicación</label>
+                    <label for="location" class="input-value">Ubicación</label><br>
                     <select name="location" class="input-location" id="location">
                         <option value="Tangananica">Tangananica</option>
                         <option value="Tanganana">Tanganana</option>
@@ -63,16 +72,16 @@
                     </select>
                 </div>
 
-                <div class="date">
+                <div class="date text">
                     <i class="material-icons part1">event</i>
-                    <label for="date">Fecha</label>
+                    <label for="date">Fecha</label><br>
                     <input type="date" class="input-date" name="date" id="date" value="2022-04-18">
                 </div>
 
 
-                <div class="type-vaccine">
+                <div class="type-vaccine text">
                     <i class="material-icons part1">vaccines</i>
-                    <label for="type-vaccine" class="input-value">Tipo de vacuna</label>
+                    <label for="type-vaccine" class="input-value">Tipo de vacuna</label><br>
                     <select name="type-vaccine" class="input-vaccine" id="type-vaccine">
                         <option value="AstraZeneca">AstraZeneca</option>
                         <option value="Sinovac">SinoVAC</option>
@@ -83,12 +92,22 @@
 
                 <button type="button" class="button-schedule">Subir</button>
             </div>
-            <!-- 
-            <div class="part2" id="secc1-right">
-                <img src="img/gato1.jpg" alt="gato doctor" class="doc-cat" id="doc-cat">
-            </div> -->
 
         </section>
+
+        </section class="section2">
+            <div class="sec2-logos-vaccines">
+                <img src="./img/astrazeneca.png" alt="AstraZeneca Vaccine" class="logos-vaccine" id="logos-vaccine-astrazeneca">
+                <img src="./img/sinovac.png" alt="Sinovac Vaccine" class="logos-vaccine" id="logos-vaccine-sinovac">
+                <img src="./img/Pfizer.png" alt="Pfizer Vaccine" class="logos-vaccine" id="logos-vaccine-pfizer">
+                <img src="./img/moderna.png" alt="Moderna Vaccine" class="logos-vaccine" id="logos-vaccine-moderna">
+            </div>
+            </div>
+        <section>
+
+
+
+        
         
         
     </main>
