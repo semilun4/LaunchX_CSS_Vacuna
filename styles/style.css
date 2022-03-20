@@ -34,7 +34,7 @@ header {
 
 #logo {
     position: relative;
-    left: 0%;
+    left: 50px;
     font-size: x-large;
     font-weight: bold;
     color: #2C4CCA;
@@ -113,11 +113,12 @@ h1{
     color: #3353d1;
     margin-right: 5px;
     border-radius: 3px;
+    padding: 5px;
 }
 
 .green {
-    background: #34805f17;
-    color: #34805f;
+    background: #ffd0121f;
+    color: #ffd012;
 }
 
 .part1-icon {
@@ -131,14 +132,14 @@ h1{
 
 .text-icon-shield {
     position: absolute;
-    left: 170px;
-    top: 2px;
+    left: 190px;
+    top: 6px;
 }
 
 .text-icon-star {
     position: absolute;
-    left: 30px;
-    top: 2px;
+    left: 40px;
+    top: 6px;
 }
 
 #star {
@@ -146,14 +147,14 @@ h1{
 }
 
 .part2-icon {
-    height: 30px;
-    padding-top: 5px;
     display: flex;
     position: absolute;
     font-weight: 600;
     font-size: x-large;
-    top: 75%;
+    top: 73%;
     left: 90px;
+    /* background-color: yellowgreen;
+    padding: 10px; */
 }
 
 .schedule{
@@ -172,25 +173,6 @@ h1{
     z-index: 0;
     padding: 10px;
 }
-
-
-/* .div-input {
-    position: absolute;
-    flex-wrap: wrap;
-    display: -ms-inline-grid;
-    justify-content: center;
-    background-color: #fff;
-    top: 85%;
-    left: 3%;
-    width: 95%;
-    height: auto;
-    border-radius: 5px;
-    border: rgba(128, 128, 128, 0.349) 1px solid;
-    box-shadow: 3px 3px 8px rgb(191, 197, 212);
-    z-index: 0;
-    padding: 10px;
-    opacity: 0.9;
-} */
 
 
 select, .input-date {
@@ -219,21 +201,108 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* Seccion 2 */
 /* Logos de vacunas */
 
-.sec2-logos-vaccine {
-    position: absolute;
+.sec2-logos-vaccines {
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    filter: grayscale(100%) opacity(18%);
+    height: 14%;
+    width: 80%;
     justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.logos-vaccine {
+.sec2-logos-vaccines img {
+    width: 18%;
+}
+
+#logos-vaccine-pfizer {
+    height: 50px;
+    top: 30px;
+}
+
+  /* Por que deberia vacunarme */
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+h4{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item{
+    font-size: small;
+}
+
+.part1-text2{
     position: relative;
-    margin-right: 20px;    
-    margin-left: 20px;
-    width: 200px;
-    -webkit-filter: grayscale(1); /* Webkit */
-    filter: gray; /* IE6-9 */
-    filter: grayscale(1); /* W3C */
-    opacity: 25%;
     left: 90px;
+    width: 90%;
+}
+
+.part2-cont{
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2%;
+}
+
+.part2-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 15%;
+}
+
+.card {
+    margin: 1%; 
+    border: 1px solid rgba(128, 128, 128, 0.151);
+    box-shadow: 0 2px 2px rgba(0, 0, 255, 0.26);    
+    border-radius: 4px;
+    margin: 10px;
+    width: 20%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card span{
+    margin-top: 15px;
+}
+
+.card p{
+    margin-top: 15px;
+    padding: 0 15px;
+    font-size: small;
+}
+
+.card h4{
+    margin-top: 15px;
+    padding: 0 15px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.card-body {
+    margin: 15px;
+    display: inline;
+}
+
+/* Seccion 3 */
+
+.space {
+    height: 10vh;
+    display: flex;
+    width: 100vw;
+    background-color: yellowgreen;
+}
+
+.part1-text3 {
+    text-align: right;
+    right: 90px;
+    width: 90%;
 }
