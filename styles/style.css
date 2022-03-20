@@ -114,6 +114,7 @@ h1{
     margin-right: 5px;
     border-radius: 3px;
     padding: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .green {
@@ -151,8 +152,10 @@ h1{
     position: absolute;
     font-weight: 600;
     font-size: x-large;
-    top: 73%;
+    top: 69%;
     left: 90px;
+    padding: 2em 1em;
+    align-items: center;
     /* background-color: yellowgreen;
     padding: 10px; */
 }
@@ -294,15 +297,70 @@ h4{
 
 /* Seccion 3 */
 
+.section3{
+    height: 100vh;
+    background-image: url(../img/tulio.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 50% 100%;
+    width: 100%;
+}
+
 .space {
-    height: 10vh;
+    height: 5vh;
     display: flex;
     width: 100vw;
-    background-color: yellowgreen;
+}
+
+/* Menu desplegable */
+h5 {
+    font-size: 18px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
 }
 
 .part1-text3 {
-    text-align: right;
-    right: 90px;
-    width: 90%;
+    padding-left: 55%;
+    padding-top: 5%;
 }
+
+.part2-cont2 {
+    padding-left: 55%;
+    padding-top: 1%;
+    padding-right: 6%;
+
+}
+
+.prepara-list {
+    list-style: none;
+    padding: 1em;
+}
+
+.item-list {
+    border-color: #1F3E72;
+
+}
+
+
+.prepara-list li .item-list{
+    align-items: center;
+    display: flex;
+    padding: 2em 1em;
+    cursor: pointer;
+}
+
+.prepara-list li h5 {
+    flex-grow: 2;
+}
+
+.prepara-list li p {
+    display: none;
+    padding: 1em 3em;
+    transition: all ease-in-out .3s;
+
+}
+
+/* .prepara-list li:hover span{
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+    transform: rotate(180deg);
+} */
