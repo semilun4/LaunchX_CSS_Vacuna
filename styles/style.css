@@ -326,9 +326,7 @@ h5 {
 
 .part2-cont2 {
     padding-left: 55%;
-    padding-top: 1%;
-    padding-right: 6%;
-
+    padding-right: 10%;
 }
 
 .prepara-list {
@@ -345,7 +343,7 @@ h5 {
 .prepara-list li .item-list{
     align-items: center;
     display: flex;
-    padding: 2em 1em;
+    padding: 1.5em 1em;
     cursor: pointer;
 }
 
