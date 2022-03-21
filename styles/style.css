@@ -306,11 +306,7 @@ h4{
     width: 100%;
 }
 
-.space {
-    height: 2vh;
-    display: flex;
-    width: 100vw;
-}
+
 
 /* Menu desplegable */
 h5 {
@@ -334,16 +330,14 @@ h5 {
     padding: 1em;
 }
 
-.item-list {
-    border-color: #1F3E72;
-
+.item-list span{
+    margin-right: 15px;
 }
-
 
 .prepara-list li .item-list{
     align-items: center;
     display: flex;
-    padding: 1.5em 1em;
+    padding: 1em 1em;
     cursor: pointer;
 }
 
@@ -358,10 +352,14 @@ h5 {
 
 }
 
-/* .prepara-list li:hover span{
-    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
-    transform: rotate(180deg);
-} */
+.prepara-list li:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.prepara-list li:hover p {
+    display: block;
+    padding: 1em 3em;
+  }
 
 /* Seccion 4 */
 .section4 {
@@ -374,19 +372,78 @@ h5 {
 
 .part1-text4 {
     padding-left: 90px;
-    padding-top: 5%;
+    padding-top: 4%;
 }
 
-.part2-cont3 {
-    height: 60%;
-    width: 50%;
+.cont-contact {
+    width: 450px;
     margin-left: 90px;
-    margin-top: 2%;
-    padding: 4%;
+    margin-top: 50px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+.cont-contact div {
+    position: relative;
+    width: 190px;
+    height: 150px;
+    margin: 7px;
+    padding: 15px 0;
+    border: 1px solid rgba(0, 0, 139, 0.014);
+    text-align: center;
+    border-radius: 5px;    
+    box-shadow: 2px 2px 7px rgba(0, 0, 139, 0.027);
+}
+
+.cont-contact span {
+    position: absolute;
+    margin-left: -70px
+}
+
+
+.cont-contact h4 {
+    position: absolute;
+    padding: 10px;
+    padding-top: 5px;
+    margin-left: 62px;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-size: medium;
+}
+
+.cont-contact p {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: small;
+    padding: 0px;
+}
+
+.cont-contact button {
+    display: block;
+    margin-top: 70px;
+    background: rgba(0, 0, 255, 0.041);
+    color: #1F3E72;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.cont-contact button:hover {
+    background-color:#2C4CCA;
+    color: white;
+    cursor: pointer;
+}
 
 /* Footer */
+
+.space {
+    height: 25vh;
+    display: flex;
+    width: 90vw;
+}
 
 footer{
     width: 100%;
@@ -467,3 +524,4 @@ table .footer-title {
 .part2-footer td a:hover{
     color: #1F3E72;
 }
+
