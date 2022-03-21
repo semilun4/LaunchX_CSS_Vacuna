@@ -15,9 +15,4 @@ Bonus:
 
 ## Contenido
 - [Mercadotecnia de la página de vacunación](https://github.com/semilun4/LaunchX_CSS_Vacuna/blob/main/Campaa_de_vacunacin.pdf)
-- [Maquetación con HTML](https://github.com/semilun4/LaunchX_CSS_Vacuna/blob/main/index.html)
-- [Estilos en CSS](https://github.com/semilun4/LaunchX_CSS_Vacuna/blob/main/styles/style.css)
 
-# Una visualización a la página
-📺
-Página web hosteada en **Netlify** [aquí](https://peaceful-swirles-9ec93c.netlify.app/).
